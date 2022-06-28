@@ -1,0 +1,47 @@
+ Package:
+ # Used if no PeaInformationLabel instance is present in the project
+ # Neo imports needs the PeaInformationLabel, with filled out and OPC enabled.
+ # Fill out the values before using this tool!
+ # Not filled values, in both cases will result: "No Information" to written to MTP.
+ - Key: 'Name'
+   Val: ''
+ - Key: 'DeviceRevision'
+   Val: ''
+ - Key: 'Uri'
+   Val: ''
+ - Key: 'DeviceLabel'
+   Val: ''
+ - Key: 'Version'
+   Val: ''
+ - Key: 'ComponentName'
+   Val: ''
+ HMIDevices:
+# List of the devices to export with the corresponding screens 
+ - Name: 'HMI_RT_1'
+   ExportedScreens:
+   - '10_Application'
+   - '20_Messages'
+   - '30_Settings'
+ UnifiedObjects:
+ # Only Rectangle and Circle can be these objects in TIA Portal
+  TopologyObjects:
+    TopologyObject:
+    - 'TopObj'
+    Junction: 
+    - 'Junction'
+    - 'Jnc'
+    Termination: 
+    - 'Termination'
+    Sink: 
+    - 'Sink'
+    Source: 
+    - 'Source'
+  Connections:
+    Connection:
+    - 'Conn'
+    Pipe:
+    - 'Pipe'
+    MeasurementLine:
+    - 'MesLine'
+    FunctionLine:
+    - 'Source'
