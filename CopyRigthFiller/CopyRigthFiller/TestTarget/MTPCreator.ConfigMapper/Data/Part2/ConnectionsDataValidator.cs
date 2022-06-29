@@ -1,8 +1,9 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="ConnectionsDataValidator.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// <copyright company="Template Compan" file="ConnectionsDataValidator.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 using log4net;
 using Siemens.MTPCreator.Interfaces.ConfigHandler.Part2;
 using Siemens.MTPCreator.Interfaces.Exceptions;

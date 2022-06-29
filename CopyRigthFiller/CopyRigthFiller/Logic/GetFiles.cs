@@ -21,22 +21,20 @@ namespace CopyRigthFiller.Logic
 
         public List<string> GetAllFiles()
         {
+            _logger.WriteLine("Searched folder: " + _configs.SearchedFolder);
             string[] files = Directory.GetFiles(_configs.SearchedFolder, _configs.Pattern, SearchOption.AllDirectories);
             List<string> allFiles = new List<string>();
             foreach(var file in files)
             {
-                bool valid = true;
-                foreach(var ignored in _configs.IgnoredFiles)
+                var filterRes = _configs.IgnoredFiles.FirstOrDefault(x => file.Contains(x));
+
+                if(filterRes != null)
                 {
-                    if (file.Contains(ignored))
-                    {
-                        valid = false;
-                    }
+                    _logger.WriteLine(file.Replace(_configs.SearchedFolder,"") + " was ignored.");
+                    continue;
                 }
-                if (valid)
-                {
-                    allFiles.Add(file);
-                }
+
+                allFiles.Add(file);
             }
 
             return allFiles;

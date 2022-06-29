@@ -1,7 +1,7 @@
 {
   "Pattern": "*.cs",
   // Search all the files with the given pattern
-  "SearchedFolder": "D:\\Concept\\CopyRigthFiller\\CopyRigthFiller\\TestTarget",
+  "SearchedFolder": "D:\\Concept\\CopyRigthFiller_Console\\CopyRigthFiller\\CopyRigthFiller\\TestTarget",
   // All the lines will be deleted with this beginning string, if the template is not the same
   // If the string is empty if will be ignored
   "DeleteLine": "//",
@@ -9,5 +9,5 @@
   "IgnoredFiles": [
     "Resource.Designer.cs"
   ],
-  "LogFilepath" : "logs.txt" 
+  "LogFilepath": "logs.txt"
 }

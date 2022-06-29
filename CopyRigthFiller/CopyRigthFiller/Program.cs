@@ -10,6 +10,7 @@ using Interfaces.CopyRightFiller.Logger;
 using Interfaces.Exceptions;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 
 namespace CopyRigthFiller
@@ -18,8 +19,6 @@ namespace CopyRigthFiller
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             Configs configurations = JsonParser.GetConfig();
             List<ILogger> loggers = new List<ILogger>()
             {
@@ -28,9 +27,11 @@ namespace CopyRigthFiller
             };
             ILoggerManager manager = new LoggerManager(loggers);
 
+
             try
             {
-                manager.WriteLine("Tool started");
+                manager.WriteLine("Tool started");  
+                WriteOutConfigs(configurations, manager);
                 GetFiles files = new GetFiles(manager, configurations);
                 var allFiles = files.GetAllFiles();
 
@@ -45,6 +46,28 @@ namespace CopyRigthFiller
             {
                 manager.WriteLine(ex.ToString());
             }
+        }
+
+        public static void WriteOutConfigs(Configs config,ILoggerManager logger)
+        {
+            foreach (PropertyDescriptor descriptor in TypeDescriptor.GetProperties(config))
+            {
+                string name = descriptor.Name;
+                object value = descriptor.GetValue(config);
+                if (value is IEnumerable<string>)
+                {
+                    logger.WriteLine(String.Format("{0}:", name));
+                    foreach (var item in value as IEnumerable<string>)
+                    {
+                        logger.WriteLine(String.Format("\t{0}", item));
+                    }
+                }
+                else
+                {
+                    logger.WriteLine(String.Format("{0} = {1}", name, value));
+                }
+            }
+            logger.WriteLine(Environment.NewLine);
         }
     }
 }
