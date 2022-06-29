@@ -1,8 +1,9 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="ConnectionsData.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Template Compan" file="ConnectionsData.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 
 
 using Siemens.MTPCreator.Interfaces.ConfigHandler.Part2;

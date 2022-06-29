@@ -1,8 +1,9 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="ExportMode.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// <copyright company="Template Compan" file="ExportMode.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 using Siemens.MTPCreator.Interfaces._Interfaces.ConfigHandler.Data;
 
 namespace Siemens.MTPCreator.ConfigMapper.Data

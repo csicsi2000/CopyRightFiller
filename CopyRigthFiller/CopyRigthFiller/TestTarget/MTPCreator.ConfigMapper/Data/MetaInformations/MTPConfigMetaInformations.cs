@@ -1,8 +1,9 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="MTPConfigMetaInformations.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// <copyright company="Template Compan" file="MTPConfigMetaInformations.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 using System;
 using System.Collections.Generic;
 using System.Linq;

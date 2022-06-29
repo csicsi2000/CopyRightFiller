@@ -1,8 +1,9 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="AppSettings.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Template Compan" file="AppSettings.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 
 using System.IO;
 using Siemens.MTPCreator.Interfaces._Interfaces.ConfigHandler.Data;

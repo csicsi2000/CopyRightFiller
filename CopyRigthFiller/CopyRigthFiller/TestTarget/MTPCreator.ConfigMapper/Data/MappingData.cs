@@ -1,8 +1,9 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="MappingData.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Template Compan" file="MappingData.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 
 using System.Collections.Generic;
 using Siemens.MTPCreator.Interfaces.ConfigHandler.Data;

@@ -1,8 +1,9 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="ConfigTemplateHandler.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Template Compan" file="ConfigTemplateHandler.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 
 using log4net;
 using System;

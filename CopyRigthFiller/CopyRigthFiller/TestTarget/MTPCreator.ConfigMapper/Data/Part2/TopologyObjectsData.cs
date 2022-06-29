@@ -1,8 +1,9 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Siemens AG" file="TopologyObjectsData.cs">
-// Copyright © Siemens AG 2022. All rights reserved. Confidential.
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Template Compan" file="TopologyObjectsData.cs">
+// Copyright © Company 2022. All rights reserved. Confidential.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
+
 
 using Siemens.MTPCreator.Interfaces.ConfigHandler.Part2;
 using System.Collections.Generic;

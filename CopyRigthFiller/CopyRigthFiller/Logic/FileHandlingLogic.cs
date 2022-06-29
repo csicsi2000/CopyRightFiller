@@ -29,13 +29,11 @@ namespace CopyRigthFiller.Logic
         {
             foreach (var filepath in files)
             {
-                _logger.WriteLine("");
-
                 string[] targetLines = File.ReadLines(filepath).Take(templateLines.Length).ToArray();
 
                 if (CompareLines(templateLines, targetLines, Path.GetFileName(filepath)))
                 {
-                    _logger.WriteLine("Correct " + filepath);
+                    _logger.WriteLine("Correct " + filepath.Replace(_config.SearchedFolder,""));
                     continue;
                 }
 
@@ -83,7 +81,7 @@ namespace CopyRigthFiller.Logic
             try
             {
                 var lines = File.ReadAllLines(filePath).ToList();
-                _logger.WriteLine("Template Inserted into " + filePath);
+                _logger.WriteLine("Template Inserted into " + filePath.Replace(_config.SearchedFolder, ""));
                 lines = DeleteWrongTemplate(lines);
                 lines.InsertRange(0, insertedLines);
                 File.WriteAllLines(filePath, lines);
